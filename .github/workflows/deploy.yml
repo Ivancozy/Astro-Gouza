@@ -24,6 +24,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "20.x"
+      - name: Install pnpm
+        run: npm install -g pnpm
       - name: 安装依赖
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
