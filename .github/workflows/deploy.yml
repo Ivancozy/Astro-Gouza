@@ -31,7 +31,7 @@ jobs:
       - name: 安装依赖
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          pnpm install --save
+          npm install --save
       - name: Install, build, and upload your site
         uses: withastro/action@v2
         
