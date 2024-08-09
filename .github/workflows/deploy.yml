@@ -27,7 +27,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
         with:
-          version: 9.x  # 指定 pnpm 版本
+          version: 8.x  # 这里指定你想要的 pnpm 版本
       - name: 安装依赖
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
