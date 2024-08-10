@@ -11,7 +11,7 @@ export function SearchButton() {
       aria-label="Search"
       onClick={() => setSearchPanelOpen(true)}
     >
-      <i className="iconfont icon-search"></i>
+      <i className="ivan_iconfont icon-search-line"></i>
     </button>
   )
 }
