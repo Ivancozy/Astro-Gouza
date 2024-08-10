@@ -32,12 +32,12 @@ jobs:
           version: 8.6.0  # 这里明确指定 pnpm 版本号
 
       - name: 安装依赖
-        run: npm install  # 使用 pnpm 安装依赖
+        run: pnpm install  # 使用 pnpm 安装依赖
 
       - name: Install, build, and upload your site
         uses: withastro/action@v2
         with:
-          package-manager: npm  # 确保指定使用 pnpm 作为包管理器
+          package-manager: pnpm  # 确保指定使用 pnpm 作为包管理器
 
   deploy:
     needs: build
