@@ -28,3 +28,10 @@ Gyoza 是开源的，如果你对这个项目感兴趣，欢迎前往 Gyoza 的 
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [Jotai](https://jotai.org/)
+
+## 赞助
+
+希望文章内容对您有所帮助，不如扫码支持关注一下吧。
+
+<!-- ![wechat](https://object.lxchapu.com/bed%2F2024%2F0507_6e3e8f73df2d4e6d.webp "wechat") -->
+
