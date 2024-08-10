@@ -100,7 +100,7 @@
   "docSearch": {
     "appId": "1GRTNV5R3Y",
     "apiKey": "12c5e4daade01cc04b0072f59dd40420",
-    "indexName": "ivan_"
+    "indexName": ""
   },
   "waline": {
     "serverURL": "https://waline.lxchapu.com"
