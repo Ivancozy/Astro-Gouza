@@ -5,13 +5,13 @@
     "description": "这是一个使用Gyoza主题，基于 Astro 和 React 开发的个人博客。",
     "keywords": "Astro,Gyoza,blog,博客，theme,ivan,ivancozy",
     "lang": "zh-CN",
-    "favicon": "/favicon.ico",
+    "favicon": "/favicon.png",
     "appleTouchIcon": "/apple-touch-icon.png"
   },
   "author": {
     "name": "ivany",
     "twitterId": "@ivany951",
-    "avatar": "https://s2.loli.net/2024/04/30/ozsnuS5Ihf3xMBG.webp"
+    "avatar": "https://s2.loli.net/2024/08/10/AtWeC2HfKIhXE9m.webp"
   },
   "hero": {
     "name": "Ivany",
@@ -103,10 +103,10 @@
     "indexName": ""
   },
   "waline": {
-    "serverURL": "https://waline.lxchapu.com"
+    "serverURL": ""
   },
   "sponsor": {
-    "wechat": "https://object.lxchapu.com/bed%2F2024%2F0507_6e3e8f73df2d4e6d.webp"
+    "wechat": ""
   },
   "analytics": {
     "enable": false,
