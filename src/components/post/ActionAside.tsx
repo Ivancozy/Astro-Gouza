@@ -6,6 +6,7 @@ import { metaSlugAtom, metaTitleAtom } from '@/store/metaInfo'
 import clsx from 'clsx'
 import { toast } from 'react-toastify'
 import { useModal } from '@/components/ui/modal'
+import { useState, useEffect } from 'react';
 
 interface ShareData {
   url: string
@@ -46,24 +47,43 @@ export function ActionAside() {
     </div>
   )
 }
+// add back to top
 function BackToTop() {
-  // 实现回到顶部，要求用户手动点击。在文章页向下滚动时显示，向上滚动到顶点隐藏
+  const [showIcon, setShowIcon] = useState(false);
+
+  const handleScroll = () => {
+    const scrollPercent = (window.scrollY / document.documentElement.scrollHeight) * 100;
+    setShowIcon(scrollPercent >= 10);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const handleBackToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
-    })
-  }
+    });
+  };
+
   return (
     <button
       type="button"
+      id='back-to-top'
       aria-label="Back to top"
-      className="size-6 text-xl leading-none hover:text-accent"
+      className={`size-6 text-xl leading-none hover:text-accent ${showIcon ? 'opacity-100' : 'opacity-0'}`}
       onClick={handleBackToTop}
+      style={{
+        transition: 'opacity 0.5s ease-in-out',
+      }}
     >
       <i className="iconfont icon-rocket"></i>
     </button>
-  )
+  );
 }
 
 function ShareButton() {
@@ -83,6 +103,7 @@ function ShareButton() {
   return (
     <button
       type="button"
+      id="share-button"
       aria-label="Share this post"
       className="size-6 text-xl leading-none hover:text-accent"
       onClick={() => openModal()}
@@ -138,6 +159,7 @@ function DonateButton() {
   return (
     <button
       type="button"
+      id='donate-button'
       aria-label="Donate to author"
       className="size-6 text-xl leading-none hover:text-accent"
       onClick={() => openDonate()}

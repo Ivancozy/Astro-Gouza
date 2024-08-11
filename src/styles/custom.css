@@ -24,3 +24,65 @@
   border-radius: 0.25rem !important;
   color: #fff !important;
 }
+
+/* ActionAside: Back to top、ShareButton、DonateButton title标题样式*/
+button[id='back-to-top'],
+button[id='donate-button'],
+button[id='share-button'] {
+  position: relative;
+}
+
+button[id='back-to-top']::before {
+  content: 'Top';
+  position: absolute;
+  left: 105%; /* 修改为 right: 0 */
+  transform: none; /* 移除 transform */
+  background-color: rgb(var(--color-accent) / var(--tw-text-opacity));
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out;
+  white-space: nowrap; /* 添加这行代码 */
+}
+button[id='share-button']::before {
+  content: '分享';
+  position: absolute;
+  left: 105%; /* 修改为 right: 0 */
+  transform: none; /* 移除 transform */
+  background-color: rgb(var(--color-accent) / var(--tw-text-opacity));
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out;
+  white-space: nowrap; /* 添加这行代码 */
+}
+button[id='donate-button']::before {
+  content: '打赏';
+  position: absolute;
+  left: 105%; /* 修改为 right: 0 */
+  transform: none; /* 移除 transform */
+  background-color: rgb(var(--color-accent) / var(--tw-text-opacity));
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out;
+  white-space: nowrap; /* 添加这行代码 */
+}
+button[id='back-to-top']:hover::before,
+button[id='donate-button']:hover::before,
+button[id='share-button']:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
