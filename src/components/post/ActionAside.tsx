@@ -39,10 +39,30 @@ export function ActionAside() {
       style={{
         transform: 'translateY(calc(100% + 24px))',
       }}
-    >
+    > 
+      <BackToTop />
       <ShareButton />
       <DonateButton />
     </div>
+  )
+}
+function BackToTop() {
+  // 实现回到顶部，要求用户手动点击。在文章页向下滚动时显示，向上滚动到顶点隐藏
+  const handleBackToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+  return (
+    <button
+      type="button"
+      aria-label="Back to top"
+      className="size-6 text-xl leading-none hover:text-accent"
+      onClick={handleBackToTop}
+    >
+      <i className="iconfont icon-rocket"></i>
+    </button>
   )
 }
 
