@@ -97,11 +97,6 @@
   "footer": {
     "startTime": "2024-08-09T00:00:00Z"
   },
-  "docSearch": {
-    "appId": "1GRTNV5R3Y",
-    "apiKey": "12c5e4daade01cc04b0072f59dd40420",
-    "indexName": ""
-  },
   "waline": {
     "serverURL": ""
   },
@@ -118,7 +113,7 @@
       "websiteId": ""
     },
     "microsoftClarity": {
-        "projectId": ""
+      "projectId": ""
     }
   }
 }
