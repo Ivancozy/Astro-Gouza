@@ -36,7 +36,7 @@ export function PostCopyright({
       <p>
         <span>文章链接：{url}</span>
         <span role="button" className="cursor-pointer select-none" onClick={handleCopyUrl}>
-          [复制]
+          [copy]
         </span>
       </p>
       <p>最后修改时间：{lastModStr}</p>

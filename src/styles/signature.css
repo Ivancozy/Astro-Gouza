@@ -18,7 +18,7 @@
 
   35%,
   75% {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 1500;
     fill: theme('textColor.primary');
   }
 

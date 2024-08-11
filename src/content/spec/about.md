@@ -15,9 +15,9 @@ Gyoza 的核心理念是简洁，快速，可爱。
 
 Gyoza 是开源的，如果你对这个项目感兴趣，欢迎前往 Gyoza 的 [Github 仓库](https://github.com/lxchapu/astro-gyoza) 来提 Issue 或者 PR。
 
-## 关于作者
+## 关于博主
 
-我是 lxchapu，是一名前端开发者，喜欢各种有趣的东西。欢迎访问我的个人网站 [www.lxchapu.com](https://www.lxchapu.com)，了解关于我更多的信息。
+我是 ivany，是一名面向AIcopy开发爱好者，喜欢各种有趣的东西。欢迎访问我的个人网站 [blog.mefy.site](https://blog.mefy.site)，了解关于我更多的信息。
 
 ## 致谢
 
@@ -28,10 +28,10 @@ Gyoza 是开源的，如果你对这个项目感兴趣，欢迎前往 Gyoza 的 
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [Jotai](https://jotai.org/)
+- [Gyoza](https://github.com/lxchapu/astro-gyoza)
 
 ## 赞助
 
 希望文章内容对您有所帮助，不如扫码支持关注一下吧。
 
 <!-- ![wechat](https://object.lxchapu.com/bed%2F2024%2F0507_6e3e8f73df2d4e6d.webp "wechat") -->
-
