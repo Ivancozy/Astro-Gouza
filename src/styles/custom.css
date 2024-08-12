@@ -116,6 +116,9 @@ button[id='share-button']:hover::before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-search-line:before {
+  content: '\e082';
+}
 
 /* mark color like search text*/
 mark {

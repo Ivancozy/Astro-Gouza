@@ -6,9 +6,6 @@
     url('/fonts/iconfont.woff?t=1716210197380') format('woff'),
     url('/fonts/iconfont.ttf?t=1716210197380') format('truetype');
 }
-.icon-search-line:before {
-  content: '\e082';
-}
 
 .iconfont {
   font-family: 'iconfont';
