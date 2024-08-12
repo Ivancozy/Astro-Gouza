@@ -113,3 +113,11 @@ button[id='share-button']:hover::before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* mark color like search text*/
+mark {
+  background-color: rgb(var(--color-accent));
+  color: #fff;
+  border-radius: 0.3rem;
+  padding: 0.06rem 0.25rem 0.1rem;
+}
