@@ -89,11 +89,6 @@
       "name": "关于",
       "link": "/about",
       "icon": "icon-ghost"
-    },
-    {
-      "name": "more",
-      "link": "/music",
-      "icon": "icon-ghost"
     }
   ],
   "posts": {

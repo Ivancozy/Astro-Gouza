@@ -102,9 +102,12 @@ button[id='share-button']:hover::before {
 @font-face {
   font-family: 'ivan_iconfont';
   src:
-    url('/fonts/ivan-icon/iconfont.woff2') format('woff2'),
-    url('/fonts/ivan-icon/iconfont.woff') format('woff'),
-    url('/fonts/ivan-icon/iconfont.ttf') format('truetype');
+    url('https://cdn3.codesign.qq.com/icons/YP4VlZMrMdjq6wL/latest/iconfont.woff2?t=39e841c2265f69579be767eb26e67c85')
+      format('woff2'),
+    url('https://cdn3.codesign.qq.com/icons/YP4VlZMrMdjq6wL/latest/iconfont.woff?t=39e841c2265f69579be767eb26e67c85')
+      format('woff'),
+    url('https://cdn3.codesign.qq.com/icons/YP4VlZMrMdjq6wL/latest/iconfont.ttf?t=39e841c2265f69579be767eb26e67c85')
+      format('truetype');
 }
 .ivan_iconfont {
   font-family: 'ivan_iconfont';
