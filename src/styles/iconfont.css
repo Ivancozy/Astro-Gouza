@@ -6,20 +6,6 @@
     url('/fonts/iconfont.woff?t=1716210197380') format('woff'),
     url('/fonts/iconfont.ttf?t=1716210197380') format('truetype');
 }
-@font-face {
-  font-family: 'ivan_iconfont';
-  src:
-    url('/fonts/ivan-icon/iconfont.woff2') format('woff2'),
-    url('/fonts/ivan-icon/iconfont.woff') format('woff'),
-    url('/fonts/ivan-icon/iconfont.ttf') format('truetype');
-}
-.ivan_iconfont {
-  font-family: 'ivan_iconfont';
-  font-size: 20px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 .icon-search-line:before {
   content: '\e082';
 }

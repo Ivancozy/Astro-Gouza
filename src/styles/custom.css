@@ -1,7 +1,6 @@
 /* Twikoo style */
 .tk-extras .tk-extra {
   font-size: 0.75rem;
-  /* 字体透明度 */
   opacity: 0.7;
 }
 .el-button--primary {
@@ -31,7 +30,6 @@ button[id='donate-button'],
 button[id='share-button'] {
   position: relative;
 }
-
 button[id='back-to-top']::before {
   content: 'Top';
   position: absolute;
@@ -85,4 +83,33 @@ button[id='donate-button']:hover::before,
 button[id='share-button']:hover::before {
   visibility: visible;
   opacity: 1;
+}
+
+/* 
+  解决搜索按钮展开时header偏移
+  当宽度大于1500且浏览器滚动条消失时会存在header往左偏移11px 
+*/
+@media screen and (min-width: 1500px) {
+  body[data-scroll-locked] header.fixed.top-0.overflow-hidden {
+    margin-right: 11px !important;
+  }
+  body[data-scroll-locked] div.fixed.z-10.top-12.inset-x-0.flex.justify-center.pointer-events-none {
+    margin-right: 11px !important;
+  }
+}
+
+/* 自定义图标 */
+@font-face {
+  font-family: 'ivan_iconfont';
+  src:
+    url('/fonts/ivan-icon/iconfont.woff2') format('woff2'),
+    url('/fonts/ivan-icon/iconfont.woff') format('woff'),
+    url('/fonts/ivan-icon/iconfont.ttf') format('truetype');
+}
+.ivan_iconfont {
+  font-family: 'ivan_iconfont';
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
